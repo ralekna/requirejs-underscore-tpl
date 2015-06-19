@@ -33,12 +33,10 @@ You can pass underscoreTemplateSettings to RequireJS config
 
 ```javascript
 requirejs.config({
-  config: {
-    underscoreTemplateSettings: {
-      interpolate: /\{\{\s*([^#\{]+?)\s*\}\}/g,  // {{ title }}
-      evaluate:    /\{\{#([\s\S]+?)\}\}/g,       // {{# console.log("stuff") }}
-      escape:      /\{\{\{([\s\S]+?)\}\}\}/g     // {{{ title }}}
-    }
+  underscoreTemplateSettings: {
+    interpolate: /\{\{\s*([^#\{]+?)\s*\}\}/g,  // {{ title }}
+    evaluate:    /\{\{#([\s\S]+?)\}\}/g,       // {{# console.log("stuff") }}
+    escape:      /\{\{\{([\s\S]+?)\}\}\}/g     // {{{ title }}}
   });
 ```
 
